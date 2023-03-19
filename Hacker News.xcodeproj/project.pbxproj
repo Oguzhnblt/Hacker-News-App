@@ -11,6 +11,10 @@
 		12188EE729C74D0300AD2F0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12188EE629C74D0300AD2F0B /* ContentView.swift */; };
 		12188EE929C74D0400AD2F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12188EE829C74D0400AD2F0B /* Assets.xcassets */; };
 		12188EEC29C74D0400AD2F0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12188EEB29C74D0400AD2F0B /* Preview Assets.xcassets */; };
+		12188EF429C75D0D00AD2F0B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12188EF329C75D0D00AD2F0B /* NetworkManager.swift */; };
+		12188EF629C75E2F00AD2F0B /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12188EF529C75E2F00AD2F0B /* PostData.swift */; };
+		12188EF929C7662500AD2F0B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12188EF829C7662500AD2F0B /* DetailView.swift */; };
+		12188EFB29C76DD900AD2F0B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12188EFA29C76DD900AD2F0B /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		12188EE629C74D0300AD2F0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12188EE829C74D0400AD2F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12188EEB29C74D0400AD2F0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12188EF329C75D0D00AD2F0B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		12188EF529C75E2F00AD2F0B /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		12188EF829C7662500AD2F0B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		12188EFA29C76DD900AD2F0B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		12188EFC29C774FD00AD2F0B /* Hacker News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hacker News.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,10 @@
 		12188EE329C74D0300AD2F0B /* Hacker News */ = {
 			isa = PBXGroup;
 			children = (
+				12188EFC29C774FD00AD2F0B /* Hacker News.entitlements */,
 				12188EE429C74D0300AD2F0B /* Hacker_NewsApp.swift */,
-				12188EE629C74D0300AD2F0B /* ContentView.swift */,
+				12188EF729C7660E00AD2F0B /* Views */,
+				12188EF229C75CF800AD2F0B /* Models */,
 				12188EE829C74D0400AD2F0B /* Assets.xcassets */,
 				12188EEA29C74D0400AD2F0B /* Preview Content */,
 			);
@@ -65,6 +76,25 @@
 				12188EEB29C74D0400AD2F0B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12188EF229C75CF800AD2F0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12188EF329C75D0D00AD2F0B /* NetworkManager.swift */,
+				12188EF529C75E2F00AD2F0B /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12188EF729C7660E00AD2F0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12188EE629C74D0300AD2F0B /* ContentView.swift */,
+				12188EF829C7662500AD2F0B /* DetailView.swift */,
+				12188EFA29C76DD900AD2F0B /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12188EF429C75D0D00AD2F0B /* NetworkManager.swift in Sources */,
+				12188EF629C75E2F00AD2F0B /* PostData.swift in Sources */,
 				12188EE729C74D0300AD2F0B /* ContentView.swift in Sources */,
+				12188EFB29C76DD900AD2F0B /* WebView.swift in Sources */,
+				12188EF929C7662500AD2F0B /* DetailView.swift in Sources */,
 				12188EE529C74D0300AD2F0B /* Hacker_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,6 +298,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hacker News/Hacker News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News/Preview Content\"";
@@ -273,8 +309,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +318,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzhanbolat.Hacker-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,6 +332,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hacker News/Hacker News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News/Preview Content\"";
@@ -302,8 +343,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +352,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzhanbolat.Hacker-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
